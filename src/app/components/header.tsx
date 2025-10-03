@@ -6,10 +6,29 @@ import { useState } from "react"
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+const handleFocusConsultation = (e: React.MouseEvent) => {
+  e.preventDefault()
+  const input = document.getElementById("consultation") as HTMLInputElement
+
+  if (input) {
+    // first focus
+    input.focus()
+
+    // then scroll after a short delay so browser's focus adjustment doesn't override it
+    setTimeout(() => {
+      const y = input.getBoundingClientRect().top + window.scrollY - 200
+      window.scrollTo({ top: y, behavior: "smooth" })
+    }, 50) // 50ms usually works, you can tweak
+  }
+
+  setIsMobileMenuOpen(false)
+}
+
   return (
     <header 
-      className="relative bg-[#FFFFFF]/40 border-2 border-white rounded-xl px-6 backdrop-blur-[100px] h-20" 
-      style={{ 
+    className="relative bg-[#FFFFFF]/40 border-2 border-white rounded-xl px-6 backdrop-blur-[100px] h-20 z-[9999]" 
+    style={{ 
         backgroundImage: "url('/vector.png')",
         boxShadow: "2px 8px 13.8px 0px #BDBDBD14"
       }}
@@ -23,27 +42,29 @@ export default function Header() {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/features" className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200">
+          <nav className="hidden md:flex items-center space-x-8 z-10">
+            <Link href="#features" className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200">
               Features
             </Link>
+            {/*
             <Link href="/merchants" className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200">
               Merchants
             </Link>
-            <Link href="/pricing" className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200">
+            */}
+            <Link href="#pricing" className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200">
               Pricing
             </Link>
 
             {/* CTA Button */}
-            <Link
-              href="/demo"
-              className="text-black px-4 py-2 rounded-lg transition-colors duration-200 flex items-center space-x-2 font-medium"
-            >
+            <a
+              href="consultation"
+              onClick={handleFocusConsultation}
+              className="text-black px-4 py-2 rounded-lg transition-colors duration-200 flex items-center space-x-2 font-medium">
               <span className="text-black font-bold">Book a Demo</span>
               <div className="bg-black rounded-md p-2 w-10 h-10 flex items-center justify-center">
                 <ArrowUpRight className="w-6 h-6 text-[#00B69E]" />
               </div>
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -66,24 +87,25 @@ export default function Header() {
 
       {/* Mobile dropdown menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-xl shadow-lg z-50 mt-1">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-xl shadow-lg z-[9999] mt-1">
           <nav className="flex flex-col p-4 space-y-4">
             <Link 
-              href="/features" 
+              href="#features" 
               className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </Link>
+            { /* 
             <Link 
-              href="/merchants" 
+              href="#merchants" 
               className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Merchants
+              onClick={() => setIsMobileMenuOpen(false)}> 
+                Merchants
             </Link>
+            */}
             <Link 
-              href="/pricing" 
+              href="#pricing" 
               className="text-[#3c3c43] hover:text-[#1b2025] transition-colors duration-200 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -92,7 +114,7 @@ export default function Header() {
             
             {/* Mobile CTA Button */}
             <Link
-              href="/demo"
+              href="#consultation"
               className="text-black px-4 py-2 rounded-lg hover:bg-[#1b1b1b] transition-colors duration-200 flex items-center justify-center space-x-2 font-medium bg-gray-100 mt-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >

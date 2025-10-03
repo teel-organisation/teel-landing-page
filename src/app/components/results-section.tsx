@@ -48,21 +48,19 @@ export default function ResultsSection() {
   }
 
   const nextTestimonial = () => {
-    let newIndex = currentTestimonial + 1
-    if (newIndex >= testimonials.length) {
-      newIndex = 0 // loop back
+    if (currentTestimonial < testimonials.length - 1) {
+      const newIndex = currentTestimonial + 1
+      setCurrentTestimonial(newIndex)
+      scrollToTestimonial(newIndex)
     }
-    setCurrentTestimonial(newIndex)
-    scrollToTestimonial(newIndex)
   }
 
   const prevTestimonial = () => {
-    let newIndex = currentTestimonial - 1
-    if (newIndex < 0) {
-      newIndex = testimonials.length - 1 // loop to last
+    if (currentTestimonial > 0) {
+      const newIndex = currentTestimonial - 1
+      setCurrentTestimonial(newIndex)
+      scrollToTestimonial(newIndex)
     }
-    setCurrentTestimonial(newIndex)
-    scrollToTestimonial(newIndex)
   }
 
   return (
@@ -93,13 +91,23 @@ export default function ResultsSection() {
             <div className="hidden md:flex space-x-2 items-center justify-end mt-8">
               <button
                 onClick={prevTestimonial}
-                className="w-12 h-12 bg-black rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors"
+                disabled={currentTestimonial === 0}
+                className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${
+                  currentTestimonial === 0 
+                    ? 'bg-[#C7C5C5] cursor-not-allowed' 
+                    : 'bg-black'
+                }`}
               >
                 <ArrowLeft className="w-6 h-6 text-white" />
               </button>
               <button
                 onClick={nextTestimonial}
-                className="w-12 h-12 bg-[#C7C5C5] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors"
+                disabled={currentTestimonial === testimonials.length - 1}
+                className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${
+                  currentTestimonial === testimonials.length - 1 
+                    ? 'bg-[#C7C5C5] cursor-not-allowed' 
+                    : 'bg-black'
+                }`}
               >
                 <ArrowRight className="w-6 h-6 text-white" />
               </button>
@@ -188,13 +196,23 @@ export default function ResultsSection() {
           <div className="flex justify-center space-x-4 mt-6">
             <button
               onClick={prevTestimonial}
-              className="w-12 h-12 bg-black rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors"
+              disabled={currentTestimonial === 0}
+              className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${
+                currentTestimonial === 0 
+                  ? 'bg-[#C7C5C5] cursor-not-allowed' 
+                  : 'bg-black'
+              }`}
             >
               <ArrowLeft className="w-6 h-6 text-white" />
             </button>
             <button
               onClick={nextTestimonial}
-              className="w-12 h-12 bg-[#C7C5C5] rounded-lg flex items-center justify-center hover:bg-gray-800 transition-colors"
+              disabled={currentTestimonial === testimonials.length - 1}
+              className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${
+                currentTestimonial === testimonials.length - 1 
+                  ? 'bg-[#C7C5C5] cursor-not-allowed' 
+                  : 'bg-black'
+              }`}
             >
               <ArrowRight className="w-6 h-6 text-white" />
             </button>

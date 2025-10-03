@@ -35,12 +35,12 @@ const HeroSection=() => {
 
         {/* Call to Action */}
         <div className="flex items-center space-x-2 mb-12 animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
-          <a href="#" className="text-gray-700 font-bold hover:underline">
+          <a href="#benefits" className="text-gray-700 font-bold hover:underline">
             Discover More
           </a>
-          <button className="w-12 h-12 bg-black text-white rounded-md flex items-center justify-center hover:bg-gray-800 transition-colors">
+          <a href="#benefits" className="w-12 h-12 bg-black text-white rounded-md flex items-center justify-center hover:bg-gray-800 transition-colors">
             <ArrowDown className="w-6 h-6 text-[#00B69E]" />
-          </button>
+          </a>
         </div>
 
         {/* Trusted By Section */}

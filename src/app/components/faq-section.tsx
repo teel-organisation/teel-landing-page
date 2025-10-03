@@ -17,11 +17,11 @@ export default function FAQSection() {
   const faqItems = [
     {
       question: "Who is Teel designed for?",
-      answer: "Teel is designed for restaurants, cafes, bars, and food service businesses of all sizes who want to streamline their payment process and improve customer experience."
+      answer: "Teel is built for modern restaurants that want to speed up checkout, reduce staff workload, and give guests a smoother, more flexible payment experience."
     },
     {
       question: "What POS systems does Teel work with?",
-      answer: "Teel integrates with most major POS systems including Square, Toast, Clover, Lightspeed, and many others. Our team can help you set up the integration that works best for your business."
+      answer: "Currently compatible with Clover, Square, and Lightspeed, with more integrations coming soon. If your restaurant uses a different POS, let us know — we'd love to prioritize it and get you set up quickly."
     },
     {
       question: "Why Teel instead of other QR payment apps?",
@@ -48,7 +48,7 @@ export default function FAQSection() {
   return (
     <section className="py-16 bg-white px-4 lg:px-20">
       <div className="mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid xl:grid-cols-2 gap-16 items-start">
           
           {/* Left Side - Content */}
           <div className="space-y-8">

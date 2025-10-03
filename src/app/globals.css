@@ -110,3 +110,178 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
+
+/* Fade animation classes */
+.scroll-animate-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.scroll-animate-fade-in.animate {
+  opacity: 1;
+}
+
+/* Fade down animation classes */
+.scroll-animate-fade-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate-fade-down.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Curtain animation keyframes */
+@keyframes curtainDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Curtain hover effect */
+.curtain-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.curtain-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transform: translateY(-100%);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.curtain-hover:hover::before {
+  transform: translateY(0);
+}
+
+.curtain-hover > * {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+
+/* Background pulse animation keyframes */
+@keyframes backgroundPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: scale(1.08);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.08);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* Pulse animation class */
+.background-pulse {
+  animation: backgroundPulse 4s ease-in-out infinite;
+}
+
+/* Scroll-triggered pulse animation */
+.scroll-pulse-trigger {
+  transition: all 0.8s ease-out;
+}
+
+.scroll-pulse-trigger.animate {
+  animation: backgroundPulse 3s ease-in-out;
+}
+
+/* One-time pulse animation keyframes - background only */
+/* One-time pulse animation keyframes */
+@keyframes pulseOnce {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* One-time pulse animation class */
+.animate-pulse-once {
+  animation: pulseOnce 1.8s ease-in-out forwards;
+}
+
+/* Title transition animations */
+@keyframes titleFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+}
+
+@keyframes titleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Title transition classes */
+.title-fade-out {
+  animation: titleFadeOut 0.8s ease-in-out forwards;
+}
+
+.title-fade-in {
+  animation: titleFadeIn 0.8s ease-in-out forwards;
+}
+
+/* Fade up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
