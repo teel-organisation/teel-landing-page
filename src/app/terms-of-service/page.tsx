@@ -4,8 +4,11 @@ export default function TermsOfServicePage() {
   return (
     <main className="min-h-screen bg-white text-gray-800 px-6 py-12 flex flex-col items-center">
       <div className="max-w-4xl w-full">
-        <Link href="/" className="mb-8 inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">
-          ← Back to Home
+        <Link
+          href="/"
+          className="mb-8 inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition"
+        >
+          &larr; Back to Home
         </Link>
 
         <h1 className="text-3xl font-bold text-teal-500 mb-6">Terms of Service</h1>
@@ -32,7 +35,7 @@ export default function TermsOfServicePage() {
             You agree to provide accurate, complete, and up-to-date information when using Teel services. Misrepresentation, false information, or fraudulent activity may result in suspension or termination of your account.
           </p>
           <p className="mb-4">
-            Users are expected to refrain from any activity that could harm Teel's systems, interfere with other users, or compromise platform security. Unauthorized access attempts, misuse of resources, or disruptive behavior are strictly prohibited.
+            Users are expected to refrain from any activity that could harm Teel&apos;s systems, interfere with other users, or compromise platform security. Unauthorized access attempts, misuse of resources, or disruptive behavior are strictly prohibited.
           </p>
           <p className="mb-4">
             Continuous engagement with Teel implies compliance with these responsibilities. We may monitor activity to ensure compliance and maintain a safe and reliable environment for all users.
@@ -58,13 +61,13 @@ export default function TermsOfServicePage() {
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-teal-500 mb-4">Limitation of Liability</h2>
           <p className="mb-4">
-            Teel is not liable for direct, indirect, incidental, consequential, or punitive damages arising from the use of the platform. Users agree to use Teel at their own risk and understand that the platform is provided "as is" without warranties of any kind.
+            Teel is not liable for direct, indirect, incidental, consequential, or punitive damages arising from the use of the platform. Users agree to use Teel at their own risk and understand that the platform is provided &quot;as is&quot; without warranties of any kind.
           </p>
           <p className="mb-4">
             While we strive to ensure uninterrupted, secure, and reliable services, unforeseen technical issues or external factors may affect performance. Teel shall not be held responsible for any losses, interruptions, or errors resulting from these circumstances.
           </p>
           <p className="mb-4">
-            Users acknowledge that financial or business decisions made based on Teel's services are the user's responsibility. Consulting with professionals is advised for critical or high-stakes decisions.
+            Users acknowledge that financial or business decisions made based on Teel&apos;s services are the user&apos;s responsibility. Consulting with professionals is advised for critical or high-stakes decisions.
           </p>
           <p className="mb-4">
             Liability limitations are essential for maintaining sustainable operations, allowing Teel to continue delivering secure, reliable services for all users.

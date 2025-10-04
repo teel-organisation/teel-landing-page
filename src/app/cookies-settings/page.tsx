@@ -4,8 +4,11 @@ export default function CookiesSettingsPage() {
   return (
     <main className="min-h-screen bg-white text-gray-800 px-6 py-12 flex flex-col items-center">
       <div className="max-w-4xl w-full">
-        <Link href="/" className="mb-8 inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">
-          ← Back to Home
+        <Link
+          href="/"
+          className="mb-8 inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition"
+        >
+          &larr; Back to Home
         </Link>
 
         <h1 className="text-3xl font-bold text-teal-500 mb-6">Cookies Settings</h1>
@@ -28,7 +31,7 @@ export default function CookiesSettingsPage() {
           <p className="mb-4"><strong>Essential Cookies:</strong> Required for basic platform functionality, including security, session management, and login.</p>
           <p className="mb-4"><strong>Performance Cookies:</strong> Track user interactions, page visits, and load times. Helps Teel optimize performance and speed.</p>
           <p className="mb-4"><strong>Functional Cookies:</strong> Remember preferences, customization settings, and personalization options.</p>
-          <p className="mb-4"><strong>Marketing & Analytics Cookies:</strong> Collect data to deliver relevant promotions, advertisements, and insights on platform usage. No personally identifiable information is sold.</p>
+          <p className="mb-4"><strong>Marketing &amp; Analytics Cookies:</strong> Collect data to deliver relevant promotions, advertisements, and insights on platform usage. No personally identifiable information is sold.</p>
           <p className="mb-4">
             Cookies may also be used for testing new features, ensuring reliable deployment, and measuring engagement with content. Repeated use allows Teel to maintain accurate insights over time.
           </p>
@@ -96,8 +99,11 @@ export default function CookiesSettingsPage() {
           </p>
         </section>
 
-        <Link href="/" className="mt-8 inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">
-          ← Back to Home
+        <Link
+          href="/"
+          className="mt-8 inline-block bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition"
+        >
+          &larr; Back to Home
         </Link>
       </div>
     </main>
