@@ -230,13 +230,13 @@ export default function FooterSection() {
             © 2025 Teel. All rights reserved
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="" className="text-white text-sm underline hover:text-white transition-colors">
+            <a href="/privacy-policy" className="text-white text-sm underline hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="" className="text-white text-sm underline hover:text-white transition-colors">
+            <a href="/terms-of-service" className="text-white text-sm underline hover:text-white transition-colors">
               Term of Service
             </a>
-            <a href="" className="text-white text-sm underline hover:text-white transition-colors">
+            <a href="/cookie-settings" className="text-white text-sm underline hover:text-white transition-colors">
               Cookies Settings
             </a>
           </div>
