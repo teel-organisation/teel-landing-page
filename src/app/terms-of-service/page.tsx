@@ -32,7 +32,7 @@ export default function TermsOfServicePage() {
             You agree to provide accurate, complete, and up-to-date information when using Teel services. Misrepresentation, false information, or fraudulent activity may result in suspension or termination of your account.
           </p>
           <p className="mb-4">
-            Users are expected to refrain from any activity that could harm Teel’s systems, interfere with other users, or compromise platform security. Unauthorized access attempts, misuse of resources, or disruptive behavior are strictly prohibited.
+            Users are expected to refrain from any activity that could harm Teel's systems, interfere with other users, or compromise platform security. Unauthorized access attempts, misuse of resources, or disruptive behavior are strictly prohibited.
           </p>
           <p className="mb-4">
             Continuous engagement with Teel implies compliance with these responsibilities. We may monitor activity to ensure compliance and maintain a safe and reliable environment for all users.
@@ -64,7 +64,7 @@ export default function TermsOfServicePage() {
             While we strive to ensure uninterrupted, secure, and reliable services, unforeseen technical issues or external factors may affect performance. Teel shall not be held responsible for any losses, interruptions, or errors resulting from these circumstances.
           </p>
           <p className="mb-4">
-            Users acknowledge that financial or business decisions made based on Teel’s services are the user’s responsibility. Consulting with professionals is advised for critical or high-stakes decisions.
+            Users acknowledge that financial or business decisions made based on Teel's services are the user's responsibility. Consulting with professionals is advised for critical or high-stakes decisions.
           </p>
           <p className="mb-4">
             Liability limitations are essential for maintaining sustainable operations, allowing Teel to continue delivering secure, reliable services for all users.
