@@ -47,12 +47,13 @@ export default function Home() {
       
       <main>
         {/* Hero Section */}
-        <div className="mx-auto px-4 lg:px-20 xl:px-52 py-12 bg-[#EAEAEA]"   style={{ 
-        backgroundImage: "url('/Vector.png')", 
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+        <div className="mx-auto px-4 lg:px-20 xl:px-52 py-12 bg-[#EAEAEA]"   
+        style={{ 
+          backgroundImage: "url('/Vector.png')", 
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}>
           <div className="flex lg:flex-row flex-col w-full items-center w-full">
             {/* Left Side - Hero Content */}
             <div className="flex flex-col justify-center w-full lg:w-[60%] ">
@@ -64,7 +65,7 @@ export default function Home() {
               style={{ transitionDelay: '0.5s' }}
             >
             <div className="md:relative flex justify-center items-center">
-              <img src="/payment.png" alt="Phone Header" className="lg:w-full w-3/4 h-auto lg:h-[595.15px] relative z-10" />
+              <img src="/payment.png" alt="Phone Header"  className="w-3/4 lg:w-full h-auto lg:h-[595.15px] relative z-10 mt-[65px] lg:mt-0" />
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-full h-8 bg-black/20 rounded-full blur-xl"></div>
             </div>
             

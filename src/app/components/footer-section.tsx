@@ -175,15 +175,15 @@ export default function FooterSection() {
               
               {/* Social Media Icons */}
               <div className="flex space-x-3 mt-4">
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/353892211427?text=Hello%20Teel%20Team%2C%20I'd%20like%20to%20book%20a%20demo" target="_blank" rel="noopener noreferrer">
                 <img src="/whatsapp.png" alt="WhatsApp" className="w-8 h-8" />
               </a>
 
-              <a href="https://instagram.com/profile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/teel.app" target="_blank" rel="noopener noreferrer">
                 <img src="/instagram.png" alt="Instagram" className="w-8 h-8" />
               </a>
 
-              <a href="https://linkedin.com/in/profile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/teel-payments" target="_blank" rel="noopener noreferrer">
                 <img src="/linkedIn.png" alt="LinkedIn" className="w-8 h-8" />
               </a>   
                 {/*<img src="/twitter.png" alt="Logo" className="w-8 h-8" />*/}
@@ -230,13 +230,13 @@ export default function FooterSection() {
             © 2025 Teel. All rights reserved
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-white text-sm underline hover:text-white transition-colors">
+            <a href="" className="text-white text-sm underline hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-white text-sm underline hover:text-white transition-colors">
+            <a href="" className="text-white text-sm underline hover:text-white transition-colors">
               Term of Service
             </a>
-            <a href="#" className="text-white text-sm underline hover:text-white transition-colors">
+            <a href="" className="text-white text-sm underline hover:text-white transition-colors">
               Cookies Settings
             </a>
           </div>
