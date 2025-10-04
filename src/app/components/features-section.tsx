@@ -11,21 +11,27 @@ export default function FeaturesSection() {
   const desktopCarouselRef = useRef<HTMLDivElement>(null)
   const sectionRef = useRef<HTMLDivElement>(null)
 
-  const handleFocusConsultation = (e: React.MouseEvent) => {
-  e.preventDefault()
-  const input = document.getElementById("consultation") as HTMLInputElement
+const handleFocusConsultation = (e: React.MouseEvent) => {
+  e.preventDefault();
+  const input = document.getElementById("consultation") as HTMLInputElement;
 
   if (input) {
-    // first focus
-    input.focus()
+    // focus first
+    input.focus();
 
-    // then scroll after a short delay so browser's focus adjustment doesn't override it
     setTimeout(() => {
-      const y = input.getBoundingClientRect().top + window.scrollY - 200
-      window.scrollTo({ top: y, behavior: "smooth" })
-    }, 50) // 50ms usually works, you can tweak
+      let offset = 0;
+
+      // Only apply margin on larger screens (example: md = 768px and up)
+      if (window.innerWidth >= 768) {
+        offset = 200; // desktop/tablet offset
+      }
+
+      const y = input.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }, 50);
   }
-}
+};
 
   const features = [
     {
