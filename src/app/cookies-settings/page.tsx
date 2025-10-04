@@ -56,8 +56,11 @@ export default function CookiesSettingsPage() {
             Teel ensures that cookies and other tracking technologies comply with privacy regulations, including GDPR, to protect user rights and maintain transparency.
           </p>
           <p className="mb-4">
-            Users may request information about cookie usage or ask for modifications to tracking preferences by contacting us at business@teelapp.com.
-            <a href="mailto:business@teelapp.com" className="text-teal-500 underline">business@teelapp.com</a>.
+            Users may request information about cookie usage or modifications to their tracking preferences by sending an email to our support team at{" "}
+            <a href="mailto:business@teelapp.com" className="text-teal-500 underline">
+              business@teelapp.com
+            </a>
+            , and our team will provide guidance and assistance promptly.
           </p>
           <p className="mb-4">
             Security measures are in place to prevent unauthorized access to cookie data, ensuring privacy is maintained while enabling necessary operational functionality.
