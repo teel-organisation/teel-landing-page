@@ -145,7 +145,7 @@ export default function FeaturesSection() {
 
   return (
     <section ref={sectionRef} className="px-4 lg:px-20 xl:px-44 py-16 lg:py-24 bg-[#EAEAEA]">
-      <div id="features" className="mx-auto px-4 mt-12 md:mt-24 scroll-mt-[3cm]">
+      <div id="features" className="mx-auto px-4 mt-8 md:mt-24 scroll-mt-[3cm]">
         {/* Header */}
         <div className="flex justify-between items-start mb-8">
           <div className="flex-1">

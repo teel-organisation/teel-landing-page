@@ -65,7 +65,7 @@ export default function Home() {
               style={{ transitionDelay: '0.5s' }}
             >
             <div className="md:relative flex justify-center items-center">
-              <img src="/payment.png" alt="Phone Header"  className="w-3/4 lg:w-full h-auto lg:h-[595.15px] relative z-10 mt-[65px] lg:mt-0" />
+              <img src="/payment.png" alt="Phone Header"  className="w-3/4 lg:w-full h-auto lg:h-[595.15px] relative z-10 mt-[75px] lg:mt-0" />
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-full h-8 bg-black/20 rounded-full blur-xl"></div>
             </div>
             
