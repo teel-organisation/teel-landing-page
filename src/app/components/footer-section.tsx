@@ -57,7 +57,7 @@ export default function FooterSection() {
   }
   return (
     <footer
-      className="relative py-16 overflow-hidden lg:px-20 xl:px-52-custom px-4"
+      className="relative py-16 overflow-hidden lg:px-20 xl:px-18 2xl:px-52 px-4"
       style={{
         background:
           "linear-gradient(224.22deg, #00B69E 0%, #00362F 99.21%)",
@@ -96,7 +96,6 @@ export default function FooterSection() {
               </p>
               </div>
               
-
               {/* Contact Form */}
               <form onSubmit={handleSubmit} className="mt-6 space-y-4 lg:space-y-0 xl:space-x-4 flex flex-col xl:flex-row w-full xl:w-auto">
                 <div className="w-full xl:w-[200px]">
@@ -163,7 +162,7 @@ export default function FooterSection() {
             </div>
 
             {/* Company Info */}
-            <div className="space-y-4 my-14 flex flex-col lg:flex-row justify-between items-center border-t border-[#C0FFF766]">
+            <div className="space-y-4 my-14 flex flex-col lg:flex-row justify-between lg:items-center border-t border-[#C0FFF766]">
            
               <div className="pt-12 items-center">
               <div className="relative bottom-3">

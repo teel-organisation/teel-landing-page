@@ -210,7 +210,7 @@ export default function PricingSection() {
     }
   }
   return (
-    <section className="py-16 bg-[#EAEAEA] px-4 lg:px-20 xl:px-52-custom">
+    <section className="py-16 bg-[#EAEAEA] px-4 lg:px-8 lg:px-20 xl:px-20 2xl:px-52">
       <div className="mx-auto px-4">
         <div className="flex items-start justify-between lg:mb-8 mb-4">
           
@@ -227,7 +227,7 @@ export default function PricingSection() {
             {/* Main Heading */}
             <div className="space-x-4 flex flex-col lg:flex-row items-start lg:items-center w-full mt-4">
               <div>
-              <h2 className="text-5xl xl:text-6xl font-bold text-black leading-tight text-hero-sm">
+              <h2 className="text-5xl 2xl:text-6xl font-bold text-black leading-tight text-hero-sm">
                 Simple Pricing,
                 <br />
                 <span className="dm-serif-display-italic">Maximum Value</span>

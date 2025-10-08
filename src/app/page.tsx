@@ -41,14 +41,14 @@ export default function Home() {
   }, []);
   return (
     <div className="min-h-screen bg-gray-100">
-        <div className="pt-12 lg:px-20-custom xl:px-52 px-4 bg-[#EAEAEA]">
+        <div className="pt-12 md:px-12 lg:px-20 xl:px-52 px-4 bg-[#EAEAEA]">
 
       <Header />
       </div>
       
       <main>
         {/* Hero Section */}
-        <div className="mx-auto px-8  lg:px-20-custom xl:px-52 py-12 bg-[#EAEAEA]"   
+        <div className="mx-auto px-8 md:px-20 lg:px-12 xl:px-20 2xl:px-52 py-12 bg-[#EAEAEA]"   
         style={{ 
           backgroundImage: "url('/Vector.png')", 
           backgroundSize: "cover",
@@ -84,7 +84,7 @@ export default function Home() {
         <WaitlistSection />
 
         {/* Results Section */}
-        <div className="px-4 lg:px-32-custom bg-[#EAEAEA]">
+        <div className="px-4 lg:px-20 2xl:px-32 bg-[#EAEAEA]">
         <ResultsSection />
         </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
         <PricingSection />
 
         {/* FAQ Section */}
-        <div className="px-4 lg:px-32-custom bg-white">
+        <div className="px-4 2xl:px-0 2xl:px-32 bg-white">
         <FAQSection />
         </div>
       </main>

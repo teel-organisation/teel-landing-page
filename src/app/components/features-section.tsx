@@ -145,7 +145,7 @@ const handleFocusConsultation = (e: React.MouseEvent) => {
   }
 
   return (
-    <section ref={sectionRef} className="px-4 lg:px-20 xl:px-44-custom py-16 lg:py-24 bg-[#EAEAEA]">
+    <section ref={sectionRef} className="px-4 lg:px-20 g:px-32 2xl:px-44 py-16 lg:py-24 bg-[#EAEAEA]">
       <div id="features" className="mx-auto px-4 mt-8 md:mt-24 scroll-mt-[3cm]">
         {/* Header */}
         <div className="flex justify-between items-start mb-8">

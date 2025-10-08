@@ -73,7 +73,7 @@ export default function ResultsSection() {
               <ArrowDownRight className="w-4 h-4" />
               <span>RESULTS</span>
             </button>
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-hero-sm">
+            <h2 className="text-5xl 2xl:text-6xl font-bold text-gray-900 leading-tight text-hero-sm">
               Driven by
               <br />
               <span className="dm-serif-display-italic">performance</span> Mindset
