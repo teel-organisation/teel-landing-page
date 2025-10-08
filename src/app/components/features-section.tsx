@@ -16,16 +16,11 @@ const handleFocusConsultation = (e: React.MouseEvent) => {
   const input = document.getElementById("consultation") as HTMLInputElement;
 
   if (input) {
-    // focus first
     input.focus();
 
     setTimeout(() => {
-      let offset = 0;
-
-      // Only apply margin on larger screens (example: md = 768px and up)
-      if (window.innerWidth >= 768) {
-        offset = 200; // desktop/tablet offset
-      }
+      // Add a smaller offset (10px) for mobile, larger (200px) for bigger screens
+      const offset = window.innerWidth > 768 ? 200 : 205;
 
       const y = input.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top: y, behavior: "smooth" });
@@ -150,7 +145,7 @@ const handleFocusConsultation = (e: React.MouseEvent) => {
   }
 
   return (
-    <section ref={sectionRef} className="px-4 lg:px-20 xl:px-44 py-16 lg:py-24 bg-[#EAEAEA]">
+    <section ref={sectionRef} className="px-4 lg:px-20 xl:px-44-custom py-16 lg:py-24 bg-[#EAEAEA]">
       <div id="features" className="mx-auto px-4 mt-8 md:mt-24 scroll-mt-[3cm]">
         {/* Header */}
         <div className="flex justify-between items-start mb-8">
@@ -240,7 +235,7 @@ const handleFocusConsultation = (e: React.MouseEvent) => {
                   <span className="text-sm font-medium text-black">Book a Demo</span>
                 </a>
                 <span className=" w-fit h-fit border border-black rounded-md px-3 py-2">
-                <a href="#consultation" >
+                <a onClick={handleFocusConsultation} href="#consultation" >
                   <ArrowUpRight className="w-4 h-4 text-[#000000]" />
                 </a>
                 </span>

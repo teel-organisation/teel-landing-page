@@ -41,13 +41,14 @@ export default function Home() {
   }, []);
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="pt-12 lg:px-20 xl:px-52 px-4 bg-[#EAEAEA]">
+        <div className="pt-12 lg:px-20-custom xl:px-52 px-4 bg-[#EAEAEA]">
+
       <Header />
       </div>
       
       <main>
         {/* Hero Section */}
-        <div className="mx-auto px-4 lg:px-20 xl:px-52 py-12 bg-[#EAEAEA]"   
+        <div className="mx-auto px-8  lg:px-20-custom xl:px-52 py-12 bg-[#EAEAEA]"   
         style={{ 
           backgroundImage: "url('/Vector.png')", 
           backgroundSize: "cover",
@@ -65,7 +66,7 @@ export default function Home() {
               style={{ transitionDelay: '0.5s' }}
             >
             <div className="md:relative flex justify-center items-center">
-              <img src="/payment.png" alt="Phone Header"  className="w-3/4 lg:w-full h-auto lg:h-[595.15px] relative z-10 mt-[75px] lg:mt-0" />
+              <img src="/payment.png" alt="Phone Header"  className="w-3/4 lg:w-full h-auto lg:h-[595.15px] relative z-10 mt-[5px] lg:mt-0 limited-lg-img" />
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 w-full h-8 bg-black/20 rounded-full blur-xl"></div>
             </div>
             
@@ -83,7 +84,7 @@ export default function Home() {
         <WaitlistSection />
 
         {/* Results Section */}
-        <div className="px-4 lg:px-32 bg-[#EAEAEA]">
+        <div className="px-4 lg:px-32-custom bg-[#EAEAEA]">
         <ResultsSection />
         </div>
 
@@ -91,7 +92,7 @@ export default function Home() {
         <PricingSection />
 
         {/* FAQ Section */}
-        <div className="px-4 lg:px-32 bg-white">
+        <div className="px-4 lg:px-32-custom bg-white">
         <FAQSection />
         </div>
       </main>

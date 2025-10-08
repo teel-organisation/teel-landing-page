@@ -57,7 +57,7 @@ export default function FooterSection() {
   }
   return (
     <footer
-      className="relative py-16 overflow-hidden lg:px-20 xl:px-52 px-4"
+      className="relative py-16 overflow-hidden lg:px-20 xl:px-52-custom px-4"
       style={{
         background:
           "linear-gradient(224.22deg, #00B69E 0%, #00362F 99.21%)",
@@ -236,7 +236,7 @@ export default function FooterSection() {
             <a href="/terms-of-service" className="text-white text-sm underline hover:text-white transition-colors">
               Term of Service
             </a>
-            <a href="/cookie-settings" className="text-white text-sm underline hover:text-white transition-colors">
+            <a href="/cookies-settings" className="text-white text-sm underline hover:text-white transition-colors">
               Cookies Settings
             </a>
           </div>

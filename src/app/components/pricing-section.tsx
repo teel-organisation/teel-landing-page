@@ -210,7 +210,7 @@ export default function PricingSection() {
     }
   }
   return (
-    <section className="py-16 bg-[#EAEAEA] px-4 lg:px-20 xl:px-52">
+    <section className="py-16 bg-[#EAEAEA] px-4 lg:px-20 xl:px-52-custom">
       <div className="mx-auto px-4">
         <div className="flex items-start justify-between lg:mb-8 mb-4">
           

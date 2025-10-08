@@ -12,16 +12,11 @@ const handleFocusConsultation = (e: React.MouseEvent) => {
   const input = document.getElementById("consultation") as HTMLInputElement;
 
   if (input) {
-    // focus first
     input.focus();
 
     setTimeout(() => {
-      let offset = 0;
-
-      // Only apply margin on larger screens (example: md = 768px and up)
-      if (window.innerWidth >= 768) {
-        offset = 200; // desktop/tablet offset
-      }
+      // Add a smaller offset (10px) for mobile, larger (200px) for bigger screens
+      const offset = window.innerWidth > 768 ? 200 : 205;
 
       const y = input.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top: y, behavior: "smooth" });
@@ -54,7 +49,7 @@ const handleFocusConsultation = (e: React.MouseEvent) => {
     };
   }, []);
   return (
-    <section ref={sectionRef} className="relative min-h-screen bg-[#EAEAEA] overflow-hidden pr-0 lg:pr-20 xl:pr-52">
+    <section ref={sectionRef} className="relative min-h-screen bg-[#EAEAEA] overflow-hidden pr-90 md:pr-120 lg:pr-20 xl:pr-52">
       {/* Background geometric shapes */}
 
   <div

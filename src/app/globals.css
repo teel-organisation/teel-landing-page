@@ -285,3 +285,50 @@ body {
   animation: fadeUp 0.7s ease-out forwards;
 }
 
+@layer utilities {
+  @media (min-width: 1280px) {
+    .lg\:px-20-custom {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 1280px) and (max-width: 1450px) {
+    .lg\:px-52-custom {
+      padding-inline: calc(var(--spacing) * 18);
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 1280px) and (max-width: 1450px) {
+    .lg\:px-44-custom {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 1280px) and (max-width: 1450px) {
+    .lg\:px-32-custom {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 1280px) and (max-width: 1450px) {
+    .limited-lg-img {
+      height: 555.15px !important;
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 1024px) and (max-width: 1450px) {
+  .px-4-custom {
+    padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+}
